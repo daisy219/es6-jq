@@ -1,0 +1,1 @@
+export const work_page = '<div>网络作业模块</div>';

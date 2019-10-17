@@ -28,6 +28,7 @@
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/polyfill": "^7.6.0",
     "@babel/preset-typescript": "^7.6.0",
+    "@types/jquery": "^3.3.31",
     "babel-loader": "^8.0.6",
     "core-js": "^3.3.2",
     "file-loader": "^4.2.0",
