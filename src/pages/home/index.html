@@ -1,4 +1,14 @@
-<div class="home_page">
-  首页内容
-  <div>待办事项</div>
+
+
+
+<div class="home_page common_contain">
+
+  {@ if( data.con > 20 ) { @}
+  <p>首页</p>
+  {@ } else { @}
+  <p>待办事项</p>
+  {@ } @}
+  {@ for(var i = 0; i < data.list.length; i++) { @}
+  <p class="fl">{{i }} : {{ data.list[i] }}</p>
+  {@ } @}
 </div>

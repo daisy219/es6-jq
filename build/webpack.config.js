@@ -55,6 +55,10 @@ module.exports = {
         test: /\.(jpg|png)$/,
         use: 'url-loader'
       },
+      {
+　　     test: /\.html$/,
+　　     use: 'raw-loader',
+      },
       { // 配置js/jsx语法解析
         test: /\.(ts)$/,
         exclude: /node_modules/,
