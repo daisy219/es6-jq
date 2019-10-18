@@ -1,5 +1,5 @@
 
-import Honey from '../../honey/index';
+import Honey from '@/honey/index';
 import testTpl from './index.html';
 import './index.styl';
 

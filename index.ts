@@ -8,13 +8,13 @@ require('core-js/features/function/bind')
 require('core-js/features/promise')
 
 // ------------------------------------------------------------ 引入路由 ---------------------------------------------------//
-import KnifeRouter from './src/router/knife_router';
+import KnifeRouter from '@/router/knife_router';
 // ------------------------------------------------------------ 样式文件 ---------------------------------------------------//
 
-import './src/assets/stylus/reset.styl';
-import './src/assets/stylus/var.styl';
-import './src/assets/stylus/common.styl';
-import './src/assets/stylus/index.styl';
+import '@/assets/stylus/reset.styl';
+import '@/assets/stylus/var.styl';
+import '@/assets/stylus/common.styl';
+import '@/assets/stylus/index.styl';
 // ------------------------------------------------------------ 实例 ------------------------------------------------------//
 
 const router = new KnifeRouter();

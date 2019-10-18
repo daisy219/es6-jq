@@ -1,6 +1,6 @@
 
-import Home from '../pages/home';
-import Work from '../pages/work';
+import Home from '@/pages/home';
+import Work from '@/pages/work';
 
 
 export const router: COM.RouteType[] = [

@@ -1,4 +1,4 @@
-import Tpl from '../template';
+import Tpl from '@/template';
 
 export default class Honey {
   public static tpl(config?: any) {
