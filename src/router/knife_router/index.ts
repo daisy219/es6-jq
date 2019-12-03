@@ -1,16 +1,18 @@
 
 import { router } from '../index';
 import { get_route_arr } from '../util';
+import { RouteType } from '@/typing/router';
 
 export default class KnifeRouter {
 
-  private route_list: COM.RouteType[] = router;  // 路由列表
+  private route_list: RouteType[] = router;  // 路由列表
   private hash: string[] = [];  // 当前路由
   private component: any = null;  // 模板
   constructor() {
     this.match();
   }
 
+  // window.onhashchange
 
   /** 路由匹配模板 */
   private match() {
@@ -22,7 +24,7 @@ export default class KnifeRouter {
       this.component = this.route_list[0].component;
       return;
     }
-    this.route_list.forEach((item: COM.RouteType) => {
+    this.route_list.forEach((item: RouteType) => {
       if (this.hash[0] === item.name) {
         this.component = item.component;
       }

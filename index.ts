@@ -9,6 +9,7 @@ require('core-js/features/promise')
 
 // ------------------------------------------------------------ 引入路由 ---------------------------------------------------//
 import KnifeRouter from '@/router/knife_router';
+import { camelize } from '@/util/index';
 // ------------------------------------------------------------ 样式文件 ---------------------------------------------------//
 
 import '@/assets/stylus/reset.styl';
@@ -32,14 +33,14 @@ dom.home.click(function() {
     dom.main.html(router.rander());
     dom.menu_item.toggleClass('active', false);
     dom.home.toggleClass('active', true);
-  });
+});
   
-  dom.work.click(function() {
-    router.push('work');
-    dom.main.html(router.rander());
-    dom.menu_item.toggleClass('active', false);
-    dom.work.toggleClass('active', true);
-  });
+dom.work.click(function() {
+  router.push('work');
+  dom.main.html(router.rander());
+  dom.menu_item.toggleClass('active', false);
+  dom.work.toggleClass('active', true);
+});
 
 // ------------------------------------------------------------ 启动 ----------------------------------------------------------//
 
@@ -53,5 +54,7 @@ $(function(){
   } else if(cur_route_name === 'work') {
     dom.work.toggleClass('active', true);
   }
+  console.log(camelize('aa-bb'));
+
 })
 

@@ -8,8 +8,8 @@ export default class Login extends Honey {
   constructor() {
     super();
   }
-  public static home_page() {
-    return super.tpl().compile(testTpl, this.data);
+  public static login_page() {
+    return testTpl;
   }
 
 }
