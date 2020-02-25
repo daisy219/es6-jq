@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); // 用来缩小（压缩优化）js文件
 
 // 负责将html文档虚拟到根目录下
 let htmlWebpackPlugin = new HtmlWebpackPlugin({
